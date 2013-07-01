@@ -228,11 +228,6 @@ public enum Material {
     CLAY_HARDENED(172),
     COAL_BLOCK(173),
     // ----- Item Separator -----
-    CE(161),
-    CF(162),
-    CG(163),
-    CH(164),
-    CI(165),
     IRON_SPADE(256, 1, 250),
     IRON_PICKAXE(257, 1, 250),
     IRON_AXE(258, 1, 250),
@@ -335,6 +330,11 @@ public enum Material {
     BED(355, 1),
     DIODE(356),
     COOKIE(357),
+    IRON_HORSE_ARMOR(417, 1),
+    GOLD_HORSE_ARMOR(418, 1),
+    DIAMOND_HORSE_ARMOR(419, 1),
+    LEAD(420),
+    NAME_TAG(421),
     /**
      * @see MapView
      */
@@ -745,6 +745,10 @@ public enum Material {
             case QUARTZ_BLOCK:
             case QUARTZ_STAIRS:
             case DROPPER:
+            case CLAY_STAINED:
+            case HAY:
+            case CLAY_HARDENED:
+            case COAL_BLOCK:
                 return true;
             default:
                 return false;
@@ -803,6 +807,7 @@ public enum Material {
             case REDSTONE_COMPARATOR_OFF:
             case REDSTONE_COMPARATOR_ON:
             case ACTIVATOR_RAIL:
+            case CARPET:
                 return true;
             default:
                 return false;
@@ -851,6 +856,7 @@ public enum Material {
             case JUNGLE_WOOD_STAIRS:
             case TRAPPED_CHEST:
             case DAYLIGHT_DETECTOR:
+            case CARPET:
                 return true;
             default:
                 return false;
@@ -882,6 +888,8 @@ public enum Material {
             case SPRUCE_WOOD_STAIRS:
             case BIRCH_WOOD_STAIRS:
             case JUNGLE_WOOD_STAIRS:
+            case HAY:
+            case COAL_BLOCK:
                 return true;
             default:
                 return false;
@@ -958,6 +966,10 @@ public enum Material {
             case QUARTZ_ORE:
             case QUARTZ_BLOCK:
             case DROPPER:
+            case CLAY_STAINED:
+            case HAY:
+            case CLAY_HARDENED:
+            case COAL_BLOCK:
                 return true;
             default:
                 return false;
