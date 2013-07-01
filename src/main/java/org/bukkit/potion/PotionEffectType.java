@@ -109,6 +109,9 @@ public abstract class PotionEffectType {
      */
     public static final PotionEffectType WITHER = new PotionEffectTypeWrapper(20);
 
+    public static final PotionEffectType w = new PotionEffectTypeWrapper(21);
+    public static final PotionEffectType x = new PotionEffectTypeWrapper(22);
+
     private final int id;
 
     protected PotionEffectType(int id) {
@@ -182,7 +185,7 @@ public abstract class PotionEffectType {
         return "PotionEffectType[" + id + ", " + getName() + "]";
     }
 
-    private static final PotionEffectType[] byId = new PotionEffectType[21];
+    private static final PotionEffectType[] byId = new PotionEffectType[23];
     private static final Map<String, PotionEffectType> byName = new HashMap<String, PotionEffectType>();
     // will break on updates.
     private static boolean acceptingNew = true;
